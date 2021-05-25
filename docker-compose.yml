@@ -1,0 +1,11 @@
+version: '3'
+services:
+  py39_jypyter:
+    image: "3.9.5-slim" # use latest official postgres version
+    volumes:
+      - py39_jypyter_data:/usr/src/app
+    ports: 
+      - 25000:8888
+
+volumes: 
+  py39_jypyter_data: # named volume
